@@ -1,0 +1,57 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a:link, a:visited, a:hover {
+    color: black;
+}
+
+a:active {
+    font-weight: bold;
+}
+
+h1, h3 {
+    text-align: center;
+    font-weight: bold;
+    width: 70%;
+}
+
+h1 {
+    color: darkslateblue;
+    border: solid;
+    border-radius: 2%;
+    background-color:lightgray;
+}
+
+.coltitulo {
+    font-weight: bold;
+    color: darkslateblue;
+}
+
+#fotoalejo {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 5px;
+    overflow:hidden;
+}
+  #fotoalejo:hover {
+    filter: grayscale(90%);
+    transition:all .5s ease-in-out;
+    -webkit-transform:scale(1.25);transform:scale(.75);
+  }
+
+.logoscontacto {
+    width: 20px;
+}
+
+footer {
+    height: 2em;
+    padding: 10px;
+    width: 70%;
+    border: solid;
+    border-radius: 2%;
+    background-color: lightgray;
+    font-size: small;
+}
