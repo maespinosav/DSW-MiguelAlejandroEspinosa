@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" type="text/css" href="../css/style.css" /> -->
+    <title>DSWUNAD Fase 2</title>
+</head>
+<body>
+    <header>
+        <H1> <b>HtmlDesign</b> - Etiquetas Básicas de HTML, atributos y valores</H1>
+        <table style="width: 100%; background-color:lightgray; border-radius:3%"> <tr> <td>
+        <nav>
+            <ul class="menu-superior">
+                <li> <a href="#">Inicio</a> </li>
+                <li> <a href="#">Temas</a>
+                    <ul>
+                        <li> <a href="#">Tema 1</a> </li>
+                        <li> <a href="#">Tema 2</a> </li>
+                    </ul>
+                </li>
+                <li> <a href="#">Recursos Digitales</a>
+                    <ul>
+                        <li> <a href="#">Recurso 1</a> </li>
+                        <li> <a href="#">Recurso 1</a> </li>
+                    </ul>
+                </li>
+                <li> <a href="#">Aprendizaje</a>
+                    <ul>
+                        <li> <a href="#">Actividad 1</a> </li>
+                        <li> <a href="#">Actividad 2</a> </li>
+                    </ul>
+                </li>
+                <li class="derecha"> <a href="../index.html">Acerca de</a> </li>
+            </ul>
+        </nav> </td> </tr> </table>
+    </header>
+
+    <section id="proposito-del-sitio">
+        <h2>PROPOSITO DEL SITIO</h2>
+        <p>
+            <b>Etiquetas Básicas de HTML, atributos y valores</b> <br><br>
+            Se planea construir un sitio Web interactivo donde los estudiantes puedan aprender los conceptos básicos de las <b>etiquetas</b> HTML: cuáles son las básicas y/o de uso frecuente, en qué momento se usan, correcta manipulación de los <b>atributos</b> que les corresponden y los <b>valores</b> asociados a cada uno. <br><br> El sitio va a disponder de un área de práctica en línea donde puedan escribir el código HTML y visualizar los resultados. De igual forma, va a tener un área donde el estudiante va a poder poner a prueba su conocimiento respondiendo cuestionarios en línea.
+        </p>
+    </section>
+
+    <article id="borrador-propuesta">
+        <H2>BORRADOR DEL CONTENIDO DEL SITIO</H2> <br>
+        <img src="../png/estructurahtml.png" alt="Estructura HTML" width="300 px">
+        <p>
+            <h3>Etiquetas HTML, atributos y valores</h3>
+            Cuando abrimos una página web, el navegador o browser que estamos usando lo que hace es abrir un archivo de <i>texto plano</i> que está escrito en <b>lenguaje HTML</b>, e interpreta su contenido acomodando los diferentes elementos (textos, imágenes, videos, etc.) y dándoles la apariencia (ubicación, colores, tamaños, etc.) como se indique en el archivo de texto. Esto quiere decir que los <i>elementos</i> que conforman la página web se describen mediante palabras especiales que marcan el inicio y el final de los mismos; estas palabras se denominan <b>etiquetas</b>. <br> <br>
+            Las etiquetas en HTML tienen <b>atributos</b> que requieren <b>valores</b>; en sí, los atributos especifican valores adicionales que configuran los elementos (etiquetas) o ajustan su comportamiento de diversas formas para cumplir los criterios de los usuarios. <cite>(Fuente: <a href="https://developer.mozilla.org/es/docs/Web/HTML/Attributes" target="_blank">MDN Web Docs: Referencia de Atributos HTML</a>). </cite> <br><br>
+            Aunque existen algunas excepciones, en general, las etiquetas se indican por pares de la siguiente forma: 
+            <ul>
+                <li> <b>Etiqueta de apertura:</b> carácter <span class="texto-coloreado"><</span>, seguido del nombre de la etiqueta (sin espacios en blanco) y terminado con el carácter <span class="texto-coloreado">></span>. </li>
+                <li> <b>Atributos y Valores:</b> Palabra Clave (que depende de la etiqueta), seguido del carácter <span class="texto-coloreado">=</span>, seguido del <i>valor</i> asignado que debe ir entre comillas (<span class="texto-coloreado">"</span>). Incluir uno o más atributos con su valores es opcional.</li>
+                <li> <b>Contenido</b>: Es lo que se hace visible en la página y cuya apariencia/comportamiento se ve afectado por los atributos de la etiqueta. </li>
+                <li> <b>Etiqueta de cierre</b>: carácter <span class="texto-coloreado"><</span>, seguido del carácter <span class="texto-coloreado">/</span>, seguido del nombre de la etiqueta (sin espacios en blanco) y terminado con el carácter <span class="texto-coloreado">></span>. Algunas etiquetas NO requieren etiqueta de cierre. </li>
+            </ul>
+            <cite>(Fuente: <a href="https://books.google.es/books?hl=es&lr&id=szDMlRzwzuUC&oi=fnd&pg=PA1&dq=html5+etiquetas+atributos+y+valores&ots=0CoLTWqBQh&sig=JF6YvkygD5EqxjYNMGytGEFU_Ms&pli=1#v=onepage&q&f=false" target="_blank">Gauchat, J. D. (2012). El gran libro de HTML5, CSS3 y Javascript. Marcombo.</a>). </cite> <br><br>
+            Por tanto, la estructura de las etiquetas HTML es: <br> <br>
+            <div style="background-color:rgb(197, 215, 247); text-align: center; border:solid; border-radius: 3%;padding: 1%;">
+                &lt;nombre_etiqueta (<i>opcional)</i> atributo(s)=valores_atributos&gt;<i>contenido</i>&lt;/nombre_etiqueta&gt;
+            </div> <br>
+            <div class="tooltip" style="text-align: center;">
+                <a href="https://uniwebsidad.com/libros/xhtml/capitulo-2/elementos-html" target="_blank"> <img src="https://uniwebsidad.com/static/libros/imagenes/xhtml/esquema_elementos_html.gif" alt="Esquema de las partes que componen un elemento HTML" /> </a>
+                <span class="tooltiptext">Crédito de la imagen: uniwebsidad.com</span>
+            </div> <br><br><br>
+        </p>
+    </article>
+
+    <div>
+        <h2>MOCKUP DE LA PÁGINA</h2>
+        <a href="https://balsamiq.cloud/sy4zm8v/pwlyt9e" target="_blank" rel="noopener noreferrer" id="img-mockup">
+        <img src="../png/OVA-Etiquetas HTML.png" alt="Mocukp de la página" width="800" /> </a>
+    </div>
+    
+
+    <br><br><br><br><br> <hr>
+
+    <footer>
+        <span style="float: left">Estudiante de la Universidad Nacional Abierta y a Distancia <br>
+            UNAD JAG, Bogotá D.C., Colombia - 2021 <br>
+            <b>Correo Institucional:</b> <a href="mailto:maespinosav@unadvirtual.edu.co?Subject=Contacto%20desde%20la%20página">maespinosav@unadvirtual.edu.co</a> <br>
+            <b>Skype:</b> <a href="skype:miguelejo39@hotmail.com?chat">miguelejo39@hotmail.com</a> </span>
+        <span style="float: right;">Última actualización: 16-Nov-2021 <br>
+            Se autoriza la distribución del contenido de ésta página <br>
+            Logos/imágenes desde <a href="https://icon-icons.com/es//terms-of-use/" target="_blank">https://icon-icons.com/es/</a> </span>
+    </footer>
+
+</body>
+</html>

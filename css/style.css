@@ -13,7 +13,6 @@ a:active {
 h1, h3 {
     text-align: center;
     font-weight: bold;
-    width: 70%;
 }
 
 h1 {
@@ -23,9 +22,115 @@ h1 {
     background-color:lightgray;
 }
 
+cite {
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.texto-coloreado {
+    background-color:antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120%;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+ul.menu-superior {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+  ul.menu-superior li {
+    float: left;
+  }
+  ul.menu-superior li.derecha {
+    float: right;
+  }
+  ul.menu-superior a {
+    display: block;
+    color: black;
+    width: 150px;
+    height: 20px;
+    padding: 10px 14px;
+    text-decoration: none;
+  }
+  ul.menu-superior li {
+      position: relative;
+      margin: 0;
+      padding: 0;
+  }
+  ul.menu-superior li a:hover {
+    background-color: black;
+    color: white;
+  }
+    ul.menu-superior ul {
+      list-style: none;
+      display:none;
+      background:#eee;
+      position:absolute;
+      top:100%;
+      left:0;
+      padding:0;
+    }
+    ul.menu-superior ul ul a {
+      line-height: 120%;
+      padding: 10px 15px;
+    }
+    ul.menu-superior ul li {
+      float:none;
+    }
+    ul.menu-superior li:hover > ul {
+      display: block;
+    }
+
 .coltitulo {
     font-weight: bold;
     color: darkslateblue;
+}
+
+.th-nivel-1 {
+    font-weight: bold;
+    color: darkslateblue;
+    background-color: lightgrey;
+}
+
+.th-nivel-2 {
+    font-weight: bold;
+    font-size: large;
+    color: cornflowerblue;
 }
 
 #fotoalejo {
@@ -49,7 +154,6 @@ h1 {
 footer {
     height: 2em;
     padding: 10px;
-    width: 70%;
     border: solid;
     border-radius: 2%;
     background-color: lightgray;
